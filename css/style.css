@@ -239,8 +239,9 @@ aside div {
   100% { transform: translate(-8px, -16px); }
 }
 /*----------------------------------------------------------------------------*/
+
 @media only screen
-  and (max-device-width: 667px) {
+  and (max-device-width: 813px) {
     header img {
       width: 300px;
     }
@@ -295,11 +296,7 @@ aside div {
       height: 70px;
     }
 
-    .troll-walking {
-      height: 70px;
-    }
-
-    .king-idle {
+    .troll-walking, .king-idle {
       height: 70px;
     }
 
@@ -307,7 +304,7 @@ aside div {
       max-width: 34%;
     }
 
-    .king-win {
+    .king-win, .king-lose {
       max-width: 15%;
     }
 
@@ -319,34 +316,17 @@ aside div {
       max-width: 13%;
     }
 
-    .king-lose {
-      max-width: 15%;
-    }
-
-    .win-modal h1 {
+    .win-modal h1, .lose-modal h1 {
       font-size: 25px;
     }
 
-    .win-modal button {
+    .win-modal button, .lose-modal button {
       font-size: 12px;
       width: 150px;
       height: 50px;
       border: 2px solid black;
     }
-
-    .lose-modal h1 {
-      font-size: 25px;
-    }
-
-    .lose-modal button {
-      font-size: 12px;
-      width: 25%;
-      height: 15%;
-      border: 2px solid black;
-    }
   }
-
-
 .hidden {
   display: none;
 }
