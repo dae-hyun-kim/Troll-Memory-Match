@@ -327,6 +327,97 @@ aside div {
       border: 2px solid black;
     }
   }
+
+@media only screen
+  and (min-device-width: 814px)
+  and (max-device-width: 1024px) {
+    header img {
+      width: 600px;
+    }
+
+    .container {
+      width: 95%;
+    }
+
+    .header-row {
+      margin-bottom: 0px;
+    }
+
+    .stat-font {
+      font-size: 11px;
+      margin-top: 14%;
+      color: gold;
+      letter-spacing: .5px;
+      font-family: "Bangers", cursive;
+    }
+
+    aside div {
+      width: 90%;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../images/game-stats.png);
+      background-size: 100% 100%;
+      margin: 2px 0px;
+    }
+
+    .card {
+      height: 30%;;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      margin: 0;
+      position: relative;
+    }
+
+    .card-front {
+      height: 100%;
+      width: 100%;
+      background-size: 100% 100%;
+    }
+
+    .card-back {
+      height: 114%;
+      width: 98%;
+    }
+
+    .troll-distance {
+      max-width: 95%;
+      margin: 40px auto 20px;
+      height: 100px;
+    }
+
+    .troll-walking, .king-idle {
+      height: 100px;
+    }
+
+    .troll-dead {
+      max-width: 34%;
+    }
+
+    .king-win, .king-lose {
+      max-width: 15%;
+    }
+
+    .warrior-win {
+      max-width: 12%;
+    }
+
+    .archer-win {
+      max-width: 13%;
+    }
+
+    .win-modal h1, .lose-modal h1 {
+      font-size: 25px;
+    }
+
+    .win-modal button, .lose-modal button {
+      font-size: 12px;
+      width: 150px;
+      height: 50px;
+      border: 2px solid black;
+    }
+  }
 .hidden {
   display: none;
 }
