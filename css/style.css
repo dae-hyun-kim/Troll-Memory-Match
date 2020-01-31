@@ -1,0 +1,352 @@
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  height: 30%;;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 10px 3px;
+  position: relative;
+}
+
+.card-front, .card-back {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+}
+
+.card-back {
+  background-image: url(../images/card-back.png);
+  background-size: 100% 100%;
+}
+
+.modal {
+  position: fixed;
+  top: 20%;
+  left: 5%;
+  width: 90%;
+  height: 60%;
+  background-size: 100% 100%;
+  border: 5px solid black;
+  background-color: white;
+  text-align: center;
+}
+
+.win-modal, .lose-modal {
+  background-image: url(../images/modal-background1.png);
+}
+
+.modal h1 {
+  color: yellow;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 50px;
+  font-family: "Uncial Antiqua", cursive;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.modal button {
+  width: 200px;
+  height: 100px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: "Uncial Antiqua", cursive;
+  border: 5px solid black;
+}
+
+.modal button:hover {
+  background-color: lightskyblue;
+}
+
+.archer-win {
+  max-width: 230px;
+  position: absolute;
+  bottom: 3%;
+  left: 0.1%;
+}
+
+.king-win {
+  max-width: 230px;
+  position: absolute;
+  bottom: 3%;
+  left: 25%;
+}
+
+.troll-dead {
+  max-width: 1200px;
+  position: absolute;
+  bottom: 3%;
+  right: 10%;
+}
+
+.warrior-win {
+  max-width: 190px;
+  position: absolute;
+  bottom: 3%;
+  left: 13%;
+}
+
+.king-lose {
+  position: absolute;
+  max-width: 230px;
+  bottom: 3%;
+  left: 43%;
+}
+
+.troll-attack {
+  position: absolute;
+  width: 400px;
+  bottom: 3%;
+  left: 30%;
+}
+
+.row {
+  justify-content: center;
+}
+
+/*-----------------------TROLL DISTANCE METER---------------------------------*/
+.forest-walk {
+  background-image: url(../images/distance-bg.png);
+}
+
+.dungeon-walk {
+  background-image: url(../images/dungeon-background.png);
+}
+
+.desert-walk {
+  background-image: url(../images/desert2-background.png);
+}
+
+.troll-distance {
+  max-width: 70%;
+  height: 100px;
+  margin: 50px auto 0;
+  background-size: contain;
+  position: relative;
+  border: 3px solid black;
+}
+.king-idle{
+  position: absolute;
+  height: 100px;
+  left: 1%;
+}
+
+.troll-walking {
+  position: absolute;
+  right: 1%;
+  height: 100px;
+  transition-duration: 4000ms;
+}
+/*-------------------------------GAME STATS-----------------------------------*/
+
+aside {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+aside div {
+  width: 90%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/game-stats.png);
+  background-size: cover;
+  margin: 5px;
+}
+
+.stat-font {
+  font-size: 26px;
+  margin-top: 34px;
+  color: gold;
+  letter-spacing: 2.5px;
+  font-family: "Bangers", cursive;
+}
+
+/*-------------------------BODY BACKGROUNDS-----------------------------------*/
+
+.cave {
+  background-image: url(../images/cave-background.png);
+}
+
+.forest {
+  background-image: url(../images/main-background.png);
+}
+
+.desert {
+  background-image: url(../images/desert-background.png);
+}
+
+/*------------------------CARD FRONTS------------------------------------------*/
+.archer-shooting {
+  background-image: url(../images/archer-shooting.gif), radial-gradient(white, rgb(255, 240, 125), transparent 70%);
+
+}
+
+.elemental-slashing {
+  background-image: url(../images/elemental-slashing.gif), radial-gradient(white, rgb(255, 240, 125), transparent 70%);
+}
+
+.mage-slashing {
+  background-image: url(../images/mage-slashing.gif), radial-gradient(white, rgb(255, 240, 125), transparent 70%);
+}
+
+.monk-slashing {
+  background-image: url(../images/monk-slashing.gif), radial-gradient(white, rgb(255, 240, 125), transparent 70%);
+}
+
+.ninja-slashing {
+  background-image: url(../images/ninja-slashing.gif), radial-gradient(white, rgb(255, 240, 125), transparent 70%);
+}
+
+.orc-slashing {
+  background-image: url(../images/orc-slashing.gif), radial-gradient(white, rgb(255, 240, 125), transparent 70%);
+}
+
+.pirate-slashing {
+  background-image: url(../images/pirate-slashing.gif), radial-gradient(white, rgb(255, 240, 125), transparent 70%);
+}
+
+.sergeant-slashing {
+  background-image: url(../images/sergeant-slashing.gif), radial-gradient(white, rgb(255, 240, 125), transparent 70%);
+}
+
+.warrior-slashing {
+  background-image: url(../images/warrior-slashing.gif), radial-gradient(white, rgb(255, 240, 125), transparent 70%);
+}
+
+/*---------------------CARD BACK ANIMATIONS-----------------------------------*/
+.card-back:hover {
+   animation: shake-cards .1s infinite alternate;
+   background-image: url(../images/card-back.png), radial-gradient(white, rgb(255, 240, 125), transparent 70%);
+
+}
+
+@keyframes shake-cards {
+  0% { transform: translate(-8px, -14px); }
+  33% { transform: translate(-10px, -14px); }
+  66% { transform: translate(-10px, -16px); }
+  100% { transform: translate(-8px, -16px); }
+}
+/*----------------------------------------------------------------------------*/
+@media only screen
+  and (max-device-width: 667px) {
+    header img {
+      width: 300px;
+    }
+
+    .container {
+      width: 95%;
+    }
+    .header-row {
+      margin-bottom: 0px;
+    }
+    .stat-font {
+      font-size: 11px;
+      margin-top: 14%;
+      color: gold;
+      letter-spacing: .5px;
+      font-family: "Bangers", cursive;
+    }
+
+    aside div {
+      width: 90%;
+      height: 28px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../images/game-stats.png);
+      background-size: 100% 100%;
+      margin: 2px 0px;
+    }
+
+    .card {
+      height: 30%;;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      margin: 0;
+      position: relative;
+    }
+
+    .card-front {
+      height: 100%;
+      width: 100%;
+      background-size: 100% 100%;
+    }
+
+    .card-back {
+      height: 114%;
+      width: 98%;
+    }
+
+    .troll-distance {
+      max-width: 95%;
+      margin: 20px auto 0;
+      height: 70px;
+    }
+
+    .troll-walking {
+      height: 70px;
+    }
+
+    .king-idle {
+      height: 70px;
+    }
+
+    .troll-dead {
+      max-width: 34%;
+    }
+
+    .king-win {
+      max-width: 15%;
+    }
+
+    .warrior-win {
+      max-width: 12%;
+    }
+
+    .archer-win {
+      max-width: 13%;
+    }
+
+    .king-lose {
+      max-width: 15%;
+    }
+
+    .win-modal h1 {
+      font-size: 25px;
+    }
+
+    .win-modal button {
+      font-size: 12px;
+      width: 150px;
+      height: 50px;
+      border: 2px solid black;
+    }
+
+    .lose-modal h1 {
+      font-size: 25px;
+    }
+
+    .lose-modal button {
+      font-size: 12px;
+      width: 25%;
+      height: 15%;
+      border: 2px solid black;
+    }
+  }
+
+
+.hidden {
+  display: none;
+}

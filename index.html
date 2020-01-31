@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Recruit & Conquer | Memory Match Game</title>
+  <link rel="stylesheet" href="./css/grid.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Uncial+Antiqua&display=swap" rel="stylesheet">
+</head>
+
+<body id="background" class="forest">
+  <div class="container">
+    <div class="row header-row">
+      <header>
+        <img src="images/logo.png" alt="">
+      </header>
+    </div>
+    <div class="row game-row">
+      <aside class="col-2">
+        <div>
+          <p class="stat-font">Stats</p>
+        </div>
+        <div>
+          <p class="stat-font">Games Played</p>
+        </div>
+        <div>
+          <p id="gamesPlayed" class="stat-font">0</p>
+        </div>
+        <div>
+          <p class="stat-font">Attempts</p>
+        </div>
+        <div>
+          <p id="attempts" class="stat-font">0</p>
+        </div>
+        <div>
+          <p class="stat-font">Accuracy</p>
+        </div>
+        <div>
+          <p id="accuracy" class="stat-font">0</p>
+        </div>
+      </aside>
+      <main id="gameCards" class="col-10">
+        <div class="col-2 card">
+          <div class="card-front archer-shooting hidden"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="col-2 card">
+          <div class="card-front archer-shooting hidden"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="col-2 card">
+          <div class="card-front elemental-slashing hidden"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="col-2 card">
+          <div class="card-front elemental-slashing hidden"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="col-2 card">
+          <div class="card-front mage-slashing hidden"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="col-2 card">
+          <div class="card-front mage-slashing hidden"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="col-2 card">
+          <div class="card-front monk-slashing hidden"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="col-2 card">
+          <div class="card-front monk-slashing hidden"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="col-2 card">
+          <div class="card-front ninja-slashing hidden"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="col-2 card">
+          <div class="card-front ninja-slashing hidden"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="col-2 card">
+          <div class="card-front orc-slashing hidden"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="col-2 card">
+          <div class="card-front orc-slashing hidden"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="col-2 card">
+          <div class="card-front pirate-slashing hidden"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="col-2 card">
+          <div class="card-front pirate-slashing hidden"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="col-2 card">
+          <div class="card-front sergeant-slashing hidden"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="col-2 card">
+          <div class="card-front sergeant-slashing hidden"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="col-2 card">
+          <div class="card-front warrior-slashing hidden"></div>
+          <div class="card-back"></div>
+        </div>
+        <div class="col-2 card">
+          <div class="card-front warrior-slashing hidden"></div>
+          <div class="card-back"></div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <div id="troll-distance-background" class="troll-distance forest-walk">
+    <img src="./images/king-idle.gif" alt="" class="king-idle">
+    <img src="./images/troll-walking.gif" alt="" class="troll-walking">
+  </div>
+  <div class="modal win-modal">
+    <h1>YOU'VE DEFEATED THE TROLL!</h1>
+    <button id="play-again">FIGHT ANOTHER TROLL!</button>
+    <img src="./images/archer-win.gif" alt="" class="archer-win">
+    <img src="./images/warrior-win.gif" alt="" class="warrior-win">
+    <img src="./images/king-win.gif" alt="" class="king-win">
+    <img src="./images/troll-dead1.png" alt="" class="troll-dead">
+  </div>
+  <div class="modal lose-modal hidden">
+    <h1>YOU DIDN'T RECRUIT ENOUGH TROOPS</h1>
+    <button id="repeat-level">REPEAT LEVEL</button>
+    <img src="./images/king-lose.gif" alt="" class="king-lose">
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
