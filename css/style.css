@@ -161,7 +161,7 @@ aside div {
   justify-content: center;
   align-items: center;
   background-image: url(../images/game-stats.png);
-  background-size: cover;
+  background-size: 100% 100%;
   margin: 5px;
 }
 
@@ -262,13 +262,13 @@ aside div {
 
     aside div {
       width: 90%;
-      height: 28px;
+      height: 30px;
       display: flex;
       justify-content: center;
       align-items: center;
       background-image: url(../images/game-stats.png);
       background-size: 100% 100%;
-      margin: 2px 0px;
+      margin: 1px 0px;
     }
 
     .card {
@@ -507,6 +507,61 @@ aside div {
       width: 150px;
       height: 50px;
       border: 2px solid black;
+    }
+  }
+
+  @media only screen
+  and (min-device-width: 1367px) {
+    aside div {
+      width: 90%;
+      height: 65px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../images/game-stats.png);
+      background-size: 100% 100%;
+      margin: 2px 0px;
+    }
+
+    header img {
+      width: 100%;
+    }
+
+  .stat-font {
+      font-size: 25px;
+      margin-top: 14%;
+      color: gold;
+      letter-spacing: .5px;
+      font-family: "Bangers", cursive;
+    }
+
+    .troll-distance {
+      max-width: 95%;
+      margin: 30px auto 20px;
+      height: 100px;
+    }
+  }
+
+  .intro-image {
+    position: absolute;
+    top: 40%;
+    right: -20%;
+    animation-duration: 20s;
+    animation-name: slideIn;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes slideIn {
+    from {
+      position: absolute;
+      top: 40%;
+      right: -20%;
+    }
+
+    to {
+      position: absolute;
+      top: 40%;
+      right: 120%;
     }
   }
 .hidden {

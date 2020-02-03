@@ -19,7 +19,7 @@
         <img src="images/logo.png" alt="">
       </header>
     </div>
-    <div class="row game-row">
+    <div class="row game-row hidden">
       <aside class="col-2">
         <div>
           <p class="stat-font">Stats</p>
@@ -43,7 +43,7 @@
           <p id="accuracy" class="stat-font">0</p>
         </div>
       </aside>
-      <main id="gameCards" class="col-10">
+      <main id="gameCards" class="col-10 hidden">
         <div class="col-2 card">
           <div class="card-front archer-shooting hidden"></div>
           <div class="card-back"></div>
@@ -119,9 +119,12 @@
       </main>
     </div>
   </div>
-  <div id="troll-distance-background" class="troll-distance forest-walk">
+  <div id="troll-distance-background" class="troll-distance forest-walk hidden">
     <img src="./images/king-idle.gif" alt="" class="king-idle">
     <img src="./images/troll-walking.gif" alt="" class="troll-walking">
+  </div>
+  <div class="intro-modal">
+    <img src="./images/troll-walking.gif" alt="" class="intro-image">
   </div>
   <div class="modal win-modal hidden">
     <h1>YOU'VE DEFEATED THE TROLL!</h1>
