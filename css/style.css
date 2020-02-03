@@ -542,26 +542,118 @@ aside div {
     }
   }
 
-  .intro-image {
+  .intro-start {
+    text-align: center;
+  }
+
+  .intro-start-button {
+    width: 20%;
+    height: 50px;
+  }
+  .intro-image-troll1 {
     position: absolute;
-    top: 40%;
+    width: 13%;
+    top: 35%;
     right: -20%;
     animation-duration: 20s;
-    animation-name: slideIn;
+    animation-name: slideIn1;
     animation-iteration-count: infinite;
   }
 
-  @keyframes slideIn {
+  .intro-image-king {
+    position: absolute;
+    width: 10%;
+    top: 35%;
+    right: -30%;
+    animation-duration: 20s;
+    animation-name: slideIn2;
+    animation-iteration-count: infinite;
+  }
+
+  .intro-image-troll2 {
+    position: absolute;
+    width: 13%;
+    top: 50%;
+    left: -10%;
+    animation-duration: 20s;
+    animation-name: slideIn3;
+    animation-iteration-count: infinite;
+  }
+
+  .intro-image-archer {
+    position: absolute;
+    width: 10%;
+    top: 50%;
+    left: -20%;
+    animation-duration: 20s;
+    animation-name: slideIn4;
+    animation-iteration-count: infinite;
+  }
+
+  .intro-image-troll3 {
+    position: absolute;
+    width: 13%;
+    top: 70%;
+    right: -20%;
+    animation-duration: 20s;
+    animation-name: slideIn1;
+    animation-iteration-count: infinite;
+  }
+
+  .intro-image-warrior {
+    position: absolute;
+    width: 10%;
+    top: 70%;
+    right: -30%;
+    animation-duration: 20s;
+    animation-name: slideIn2;
+    animation-iteration-count: infinite;
+  }
+  @keyframes slideIn1 {
     from {
       position: absolute;
-      top: 40%;
       right: -20%;
     }
 
     to {
       position: absolute;
-      top: 40%;
       right: 120%;
+    }
+  }
+
+  @keyframes slideIn2 {
+    from {
+      position: absolute;
+      right: -30%;
+    }
+
+    to {
+      position: absolute;
+      right: 110%;
+    }
+  }
+
+  @keyframes slideIn3 {
+    from {
+      position: absolute;
+      left: -10%;
+    }
+
+    to {
+      position: absolute;
+      left: 110%;
+    }
+  }
+
+  @keyframes slideIn4 {
+    from {
+      position: absolute;
+      left: -20%;
+    }
+
+    to {
+      position: absolute;
+      left: 100%;
     }
   }
 .hidden {
