@@ -107,6 +107,8 @@ function handleClick(event) {
       matches++
       if (matches === maxMatches) {
         theModal1.classList.remove("hidden");
+        gameRow.classList.add("hidden");
+        trollDistanceBackground.classList.add("hidden");
       }
 
     } else {
@@ -125,6 +127,8 @@ function handleClick(event) {
 
     if (turns === 20) {
       loseModal.classList.remove("hidden");
+      gameRow.classList.add("hidden");
+      trollDistanceBackground.classList.add("hidden");
     }
 
     trollDistance = (turns * 4.5);
@@ -135,6 +139,7 @@ function handleClick(event) {
 /**************************WIN MODAL/NEXT TROLL********************************/
 playAgain.addEventListener("click", function () {
   theModal1.classList.add("hidden");
+  gameRow.classList.remove("hidden");
   gamesPlayed.textContent = ++gamesPlayedCounter;
   turns = 0;
   matches = 0;
@@ -186,6 +191,8 @@ playAgain.addEventListener("click", function () {
 repeatLevel.addEventListener("click", function () {
   setTimeout(function () {
     theModal2.classList.add("hidden");
+    gameRow.classList.remove("hidden");
+    trollDistanceBackground.classList.remove("hidden");
     gamesPlayed.textContent = ++gamesPlayedCounter;
     turns = 0;
     matches = 0;
