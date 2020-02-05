@@ -17,7 +17,7 @@ main {
 }
 
 .card-front, .card-back {
-  height: 100%;
+  height: 21vh;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -83,7 +83,7 @@ main {
 }
 
 .troll-dead {
-  max-width: 1200px;
+  max-width: 35vw;
   position: absolute;
   bottom: 3%;
   right: 10%;
@@ -165,14 +165,14 @@ main {
 }
 .king-idle{
   position: absolute;
-  height: 100px;
+  height: 15vh;
   left: 1%;
 }
 
 .troll-walking {
   position: absolute;
   right: 1%;
-  height: 100px;
+  height: 15vh;
   transition-duration: 4000ms;
 }
 /*-------------------------------GAME STATS-----------------------------------*/
@@ -312,28 +312,28 @@ aside div {
     }
 
     .card-front {
-      height: 100%;
+      height: 22vh;
       width: 100%;
       background-size: 100% 100%;
     }
 
     .card-back {
-      height: 114%;
+      height: 21vh;
       width: 98%;
     }
 
     .troll-distance {
       max-width: 95%;
       margin: 20px auto 0;
-      height: 70px;
+      height: 19vh;
     }
 
     .troll-walking, .king-idle {
-      height: 70px;
+      height: 19vh;
     }
 
     .troll-dead {
-      max-width: 34%;
+      max-width: 35vw;
     }
 
     .king-win, .king-lose {
@@ -410,13 +410,13 @@ aside div {
     }
 
     .card-front {
-      height: 100%;
+      height: 22vh;
       width: 100%;
       background-size: 100% 100%;
     }
 
     .card-back {
-      height: 114%;
+      height: 22vh;
       width: 100%;
     }
 
@@ -431,7 +431,7 @@ aside div {
     }
 
     .troll-dead {
-      max-width: 34%;
+      max-width: 40vw;
     }
 
     .king-win, .king-lose {
@@ -510,13 +510,13 @@ aside div {
     }
 
     .card-front {
-      height: 100%;
+      height: 21vh;
       width: 100%;
       background-size: 100% 100%;
     }
 
     .card-back {
-      height: 114%;
+      height: 22vh;
       width: 100%;
     }
 
@@ -531,7 +531,7 @@ aside div {
     }
 
     .troll-dead {
-      max-width: 34%;
+      max-width: 40vw;
     }
 
     .king-win, .king-lose {
@@ -593,7 +593,7 @@ aside div {
     .troll-distance {
       max-width: 95%;
       margin: 30px auto 20px;
-      height: 100px;
+      height: 15vh;
     }
   }
 
