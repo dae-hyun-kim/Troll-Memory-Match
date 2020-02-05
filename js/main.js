@@ -3,6 +3,12 @@ var background = document.getElementById("background");
 var trollWalkingImage = document.getElementsByClassName("troll-walking")[0];
 var trollDistanceBackground = document.getElementById("troll-distance-background");
 
+var introStart = document.getElementsByClassName("intro-start")[0];
+var introStartButton = document.getElementsByClassName("intro-start-button")[0];
+var introModal = document.getElementsByClassName("intro-modal")[0];
+var startGameButton = document.getElementsByClassName("start-game-button")[0];
+var gameRow = document.getElementsByClassName("game-row")[0];
+
 var gameCards = document.getElementById("gameCards");
 var firstCardClicked;
 var secondCardClicked;
@@ -60,6 +66,17 @@ var backgroundArray = [
 ]
 
 var backgroundPicker = Math.floor(Math.random() * 3);
+
+introStartButton.addEventListener("click", function(){
+  introStart.classList.add("hidden");
+  introModal.classList.remove("hidden");
+})
+
+startGameButton.addEventListener("click", function() {
+  introModal.classList.add("hidden");
+  gameRow.classList.remove("hidden");
+  trollDistanceBackground.classList.remove("hidden");
+})
 
 gameCards.addEventListener("click", handleClick);
 
