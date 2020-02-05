@@ -43,7 +43,7 @@
           <p id="accuracy" class="stat-font">0</p>
         </div>
       </aside>
-      <main id="gameCards" class="col-10 hidden">
+      <main id="gameCards" class="col-10">
         <div class="col-2 card">
           <div class="card-front archer-shooting hidden"></div>
           <div class="card-back"></div>
@@ -123,23 +123,6 @@
     <img src="./images/king-idle.gif" alt="" class="king-idle">
     <img src="./images/troll-walking.gif" alt="" class="troll-walking">
   </div>
-  <div class="intro-start hidden">
-    <button class="intro-start-button">START GAME</button>
-    <img src="./images/troll-walking.gif" alt="" class="intro-image-troll1">
-    <img src="./images/king-intro.gif" alt="" class="intro-image-king">
-    <img src="./images/troll2-intro.gif" alt="" class="intro-image-troll2">
-    <img src="./images/archer-intro.gif" alt="" class="intro-image-archer">
-    <img src="./images/troll2-walking.gif" alt="" class="intro-image-troll3">
-    <img src="./images/warrior-intro.gif" alt="" class="intro-image-warrior">
-  </div>
-  <div class="modal intro-modal">
-    <img src="./images/king-idle.gif" alt="">
-    <div class="intro-text">
-      <p>Hey you! The Trolls are coming! Help me recruit soldiers to defend the castle. You get 20 attempts
-         before the trolls reach you. GOOD LUCK!!!
-      </p>
-    </div>
-  </div>
   <div class="modal win-modal hidden">
     <h1>YOU'VE DEFEATED THE TROLL!</h1>
     <button id="play-again">FIGHT ANOTHER TROLL!</button>
@@ -152,6 +135,24 @@
     <h1>YOU DIDN'T RECRUIT ENOUGH TROOPS!</h1>
     <button id="repeat-level">REPEAT LEVEL</button>
     <img src="./images/king-lose.gif" alt="" class="king-lose">
+  </div>
+  <div class="intro-start">
+    <button class="intro-start-button">START GAME</button>
+    <img src="./images/troll-walking.gif" alt="" class="intro-image-troll1">
+    <img src="./images/king-intro.gif" alt="" class="intro-image-king">
+    <img src="./images/troll2-intro.gif" alt="" class="intro-image-troll2">
+    <img src="./images/archer-intro.gif" alt="" class="intro-image-archer">
+    <img src="./images/troll2-walking.gif" alt="" class="intro-image-troll3">
+    <img src="./images/warrior-intro.gif" alt="" class="intro-image-warrior">
+  </div>
+  <div class="modal intro-modal hidden">
+    <button class="start-game-button">RECRUIT TROOPS</button>
+    <img src="./images/king-idle.gif" alt="">
+    <div class="intro-text">
+      <p>Hey you! The Trolls are coming! Help me recruit soldiers to defend the castle. You get 20 attempts
+        before the trolls reach you. GOOD LUCK!!!
+      </p>
+    </div>
   </div>
   <script src="./js/main.js"></script>
 </body>

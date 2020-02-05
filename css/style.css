@@ -126,12 +126,20 @@ main {
   }
 
   .intro-text {
-    height: 20%;
-    width: 20%;
+    height: 35%;
+    width: 43%;
     background-color: white;
     position: absolute;
     top: 40%;
     left: 45%;
+    border-radius: 5%;
+    background-color: beige;
+    border: 2px solid black;
+  }
+
+  .intro-text p {
+    font-size: 11px;
+    font-family: "Uncial Antiqua", cursive;
   }
 
 /*-----------------------TROLL DISTANCE METER---------------------------------*/
@@ -266,6 +274,10 @@ aside div {
       width: 300px;
     }
 
+    .intro-text p {
+      font-size: 12px;
+    }
+
     .container {
       width: 95%;
     }
@@ -355,6 +367,9 @@ aside div {
       width: 600px;
     }
 
+    .intro-text p {
+      font-size: 19px;
+    }
     #background {
       height: 98vh;
     }
@@ -450,6 +465,11 @@ aside div {
     #background {
       height: 99vh;
     }
+
+    .intro-text p {
+      font-size: 26px;
+    }
+
     aside div {
       width: 90%;
       height: 95px;
@@ -544,6 +564,9 @@ aside div {
       height: 99vh;
     }
 
+    .intro-text p {
+      font-size: 1.5rem;
+    }
     aside div {
       width: 90%;
       height: 8.4vh;
@@ -575,7 +598,11 @@ aside div {
   }
 
   .intro-start {
+    position: relative;
+    height: 80vh;
+    width: 98vw;
     text-align: center;
+    overflow: hidden;
   }
 
   body {
@@ -601,22 +628,20 @@ aside div {
   }
   .intro-image-troll1 {
     position: absolute;
-    overflow: hidden;
     width: 15%;
     top: 35%;
     right: 10%;
-    animation-duration: 22s;
+    animation-duration: 17s;
     animation-name: slideIn1;
     animation-iteration-count: infinite;
   }
 
   .intro-image-king {
     position: absolute;
-    overflow: hidden;
     width: 11%;
     top: 35%;
     right: 0%;
-    animation-duration: 22s;
+    animation-duration: 17s;
     animation-name: slideIn2;
     animation-iteration-count: infinite;
   }
@@ -626,40 +651,37 @@ aside div {
     width: 15%;
     top: 50%;
     left: 0%;
-    animation-duration: 22s;
+    animation-duration: 15s;
     animation-name: slideIn3;
     animation-iteration-count: infinite;
   }
 
   .intro-image-archer {
     position: absolute;
-    overflow: hidden;
     width: 11%;
     top: 50%;
     left: 0;
-    animation-duration: 22s;
+    animation-duration: 15s;
     animation-name: slideIn4;
     animation-iteration-count: infinite;
   }
 
   .intro-image-troll3 {
     position: absolute;
-    overflow: hidden;
     width: 15%;
     top: 70%;
     right: 5%;
-    animation-duration: 22s;
+    animation-duration: 13s;
     animation-name: slideIn1;
     animation-iteration-count: infinite;
   }
 
   .intro-image-warrior {
     position: absolute;
-    overflow: hidden;
     width: 11%;
     top: 70%;
     right: 0;
-    animation-duration: 22s;
+    animation-duration: 13s;
     animation-name: slideIn2;
     animation-iteration-count: infinite;
   }
