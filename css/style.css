@@ -1,6 +1,8 @@
 body {
   background-size: cover;
   background-repeat: no-repeat;
+  height: 99vh;
+  overflow: hidden;
 }
 
 main {
@@ -266,346 +268,12 @@ aside div {
   66% { transform: translate(-10px, -16px); }
   100% { transform: translate(-8px, -16px); }
 }
-/*----------------------------------------------------------------------------*/
-
-@media only screen
-  and (max-device-width: 813px) {
-    header img {
-      width: 300px;
-    }
-
-    .intro-text p {
-      font-size: 12px;
-    }
-
-    .container {
-      width: 95%;
-    }
-    .header-row {
-      margin-bottom: 0px;
-    }
-    .stat-font {
-      font-size: 11px;
-      margin-top: 14%;
-      color: gold;
-      letter-spacing: .5px;
-      font-family: "Bangers", cursive;
-    }
-
-    aside div {
-      width: 90%;
-      height: 8vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-image: url(../images/game-stats.png);
-      background-size: 100% 100%;
-      margin: 1px 0px;
-    }
-
-    .card {
-      height: 30%;;
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-      margin: 0;
-      position: relative;
-    }
-
-    .card-front {
-      height: 22vh;
-      width: 100%;
-      background-size: 100% 100%;
-    }
-
-    .card-back {
-      height: 21vh;
-      width: 98%;
-    }
-
-    .troll-distance {
-      max-width: 95%;
-      margin: 20px auto 0;
-      height: 19vh;
-    }
-
-    .troll-walking, .king-idle {
-      height: 19vh;
-    }
-
-    .troll-dead {
-      max-width: 35vw;
-    }
-
-    .king-win, .king-lose {
-      max-width: 15%;
-    }
-
-    .warrior-win {
-      max-width: 12%;
-    }
-
-    .archer-win {
-      max-width: 13%;
-    }
-
-    .win-modal h1, .lose-modal h1 {
-      font-size: 25px;
-    }
-
-    .win-modal button, .lose-modal button {
-      font-size: 12px;
-      width: 150px;
-      height: 50px;
-      border: 2px solid black;
-    }
-  }
-
-@media only screen
-  and (min-device-width: 814px)
-  and (max-device-width: 1024px) {
-    header img {
-      width: 600px;
-    }
-
-    .intro-text p {
-      font-size: 19px;
-    }
-    #background {
-      height: 98vh;
-    }
-
-    .container {
-      width: 95%;
-    }
-
-    .header-row {
-      margin-bottom: 0px;
-    }
-
-    .stat-font {
-      font-size: 20px;
-      margin-top: 14%;
-      color: gold;
-      letter-spacing: .5px;
-      font-family: "Bangers", cursive;
-    }
-
-    aside div {
-      width: 90%;
-      height: 70px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-image: url(../images/game-stats.png);
-      background-size: 100% 100%;
-      margin: 2px 0px;
-    }
-
-    .card {
-      height: 30%;;
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-      margin: 0;
-      position: relative;
-    }
-
-    .card-front {
-      height: 22vh;
-      width: 100%;
-      background-size: 100% 100%;
-    }
-
-    .card-back {
-      height: 22vh;
-      width: 100%;
-    }
-
-    .troll-distance {
-      max-width: 95%;
-      margin: 40px auto 20px;
-      height: 100px;
-    }
-
-    .troll-walking, .king-idle {
-      height: 100px;
-    }
-
-    .troll-dead {
-      max-width: 40vw;
-    }
-
-    .king-win, .king-lose {
-      max-width: 15%;
-    }
-
-    .warrior-win {
-      max-width: 12%;
-    }
-
-    .archer-win {
-      max-width: 13%;
-    }
-
-    .win-modal h1, .lose-modal h1 {
-      font-size: 45px;
-    }
-
-    .win-modal button, .lose-modal button {
-      font-size: 30px;
-      width: 195px;
-      height: 130px;
-      border: 2px solid black;
-    }
-  }
-
-  @media only screen
-  and (min-device-width: 1025px)
-  and (max-device-width: 1366px) {
-
-    #background {
-      height: 99vh;
-    }
-
-    .intro-text p {
-      font-size: 26px;
-    }
-
-    aside div {
-      width: 90%;
-      height: 95px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-image: url(../images/game-stats.png);
-      background-size: 100% 100%;
-      margin: 2px 0px;
-    }
-
-    header img {
-      width: 900px;
-    }
-
-    .container {
-      width: 95%;
-    }
-
-    .header-row {
-      margin-bottom: 0px;
-    }
-
-    .stat-font {
-      font-size: 27px;
-      margin-top: 14%;
-      color: gold;
-      letter-spacing: .5px;
-      font-family: "Bangers", cursive;
-    }
-
-    .card {
-      height: 30%;;
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-      margin: 0;
-      position: relative;
-    }
-
-    .card-front {
-      height: 21vh;
-      width: 100%;
-      background-size: 100% 100%;
-    }
-
-    .card-back {
-      height: 22vh;
-      width: 100%;
-    }
-
-    .troll-distance {
-      max-width: 95%;
-      margin: 40px auto 20px;
-      height: 155px;
-    }
-
-    .troll-walking, .king-idle {
-      height: 150px;
-    }
-
-    .troll-dead {
-      max-width: 40vw;
-    }
-
-    .king-win, .king-lose {
-      max-width: 15%;
-    }
-
-    .warrior-win {
-      max-width: 12%;
-    }
-
-    .archer-win {
-      max-width: 13%;
-    }
-
-    .win-modal h1, .lose-modal h1 {
-      font-size: 45px;
-    }
-
-    .win-modal button, .lose-modal button {
-      font-size: 12px;
-      width: 150px;
-      height: 50px;
-      border: 2px solid black;
-    }
-  }
-
-  @media only screen
-  and (min-device-width: 1367px) {
-    #background {
-      height: 99vh;
-    }
-
-    .intro-text p {
-      font-size: 1.5rem;
-    }
-    aside div {
-      width: 90%;
-      height: 8.4vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-image: url(../images/game-stats.png);
-      background-size: 100% 100%;
-      margin: 2px 0px;
-    }
-
-    header img {
-      width: 100%;
-    }
-
-  .stat-font {
-      font-size: 25px;
-      margin-top: 14%;
-      color: gold;
-      letter-spacing: .5px;
-      font-family: "Bangers", cursive;
-    }
-
-    .troll-distance {
-      max-width: 95%;
-      margin: 30px auto 20px;
-      height: 15vh;
-    }
-  }
-
-  .intro-start {
+/*-------------------------INTRO PAGE ANIMATIONS------------------------------*/
+.intro-start {
     position: relative;
     height: 80vh;
     width: 98vw;
     text-align: center;
-    overflow: hidden;
-  }
-
-  body {
     overflow: hidden;
   }
 
@@ -732,6 +400,472 @@ aside div {
       left: 110%;
     }
   }
+
+/*----------------------------------------------------------------------------*/
+@media only screen
+  and (max-device-width: 599px) {
+    header img {
+      width: 100%;
+    }
+    .intro-text p {
+      font-size: 12px;
+    }
+    .intro-start-button {
+      width: 45%;
+      height: 8vh;
+      font-size: 3vh;
+    }
+    .container {
+      width: 95%;
+    }
+    .header-row {
+      margin-bottom: 0px;
+    }
+    .stat-font {
+      font-size: 11px;
+      margin-top: 14%;
+      color: gold;
+      letter-spacing: .5px;
+      font-family: "Bangers", cursive;
+    }
+
+    .stat-column {
+      display: none;
+    }
+
+    .game-row {
+      height: 79vh;
+    }
+
+    aside div {
+      width: 90%;
+      height: 8vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../images/game-stats.png);
+      background-size: 100% 100%;
+      margin: 1px 0px;
+    }
+
+    .card {
+      height: 10%;
+      width: 33%;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      margin: 0;
+      position: relative;
+    }
+
+    .card-front {
+      height: 14vh;
+      width: 100%;
+      background-size: 100% 100%;
+    }
+
+    .card-back {
+      height: 13vh;
+      width: 98%;
+    }
+
+    .troll-distance {
+      max-width: 95%;
+      margin: 20px auto 0;
+      height: 9vh;
+    }
+
+    .troll-walking, .king-idle {
+      height: 9vh;
+    }
+
+    .troll-dead {
+      max-width: 35vw;
+    }
+
+    .king-win, .king-lose {
+      max-width: 15%;
+    }
+
+    .warrior-win {
+      max-width: 12%;
+    }
+
+    .archer-win {
+      max-width: 13%;
+    }
+
+    .win-modal h1, .lose-modal h1 {
+      font-size: 25px;
+    }
+
+    .win-modal button, .lose-modal button {
+      font-size: 12px;
+      width: 150px;
+      height: 50px;
+      border: 2px solid black;
+    }
+
+    .intro-image-troll1 {
+    position: absolute;
+    width: 28%;
+    top: 45%;
+  }
+    .intro-image-king {
+    position: absolute;
+    width: 20%;
+    top: 46%;
+    }
+
+    .intro-image-troll2 {
+    position: absolute;
+    width: 28%;
+    top: 60%;
+  }
+
+  .intro-image-archer {
+    position: absolute;
+    width: 20%;
+    top: 62%;
+  }
+
+  .intro-image-troll3 {
+    position: absolute;
+    width: 28%;
+    top: 80%;
+  }
+
+  .intro-image-warrior {
+    position: absolute;
+    width: 20%;
+    top: 82%;
+  }
+  }
+@media only screen
+  and (min-device-width:600px)
+  and (max-device-width: 813px) {
+    header img {
+      width: 300px;
+    }
+
+    .intro-text p {
+      font-size: 12px;
+    }
+
+    .container {
+      width: 95%;
+    }
+    .header-row {
+      margin-bottom: 0px;
+    }
+    .stat-font {
+      font-size: 11px;
+      margin-top: 14%;
+      color: gold;
+      letter-spacing: .5px;
+      font-family: "Bangers", cursive;
+    }
+
+    aside div {
+      width: 90%;
+      height: 8vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../images/game-stats.png);
+      background-size: 100% 100%;
+      margin: 1px 0px;
+    }
+
+    .card {
+      height: 30%;;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      margin: 0;
+      position: relative;
+    }
+
+    .card-front {
+      height: 22vh;
+      width: 100%;
+      background-size: 100% 100%;
+    }
+
+    .card-back {
+      height: 21vh;
+      width: 98%;
+    }
+
+    .troll-distance {
+      max-width: 95%;
+      margin: 20px auto 0;
+      height: 19vh;
+    }
+
+    .troll-walking, .king-idle {
+      height: 19vh;
+    }
+
+    .troll-dead {
+      max-width: 35vw;
+    }
+
+    .king-win, .king-lose {
+      max-width: 15%;
+    }
+
+    .warrior-win {
+      max-width: 12%;
+    }
+
+    .archer-win {
+      max-width: 13%;
+    }
+
+    .win-modal h1, .lose-modal h1 {
+      font-size: 25px;
+    }
+
+    .win-modal button, .lose-modal button {
+      font-size: 12px;
+      width: 150px;
+      height: 50px;
+      border: 2px solid black;
+    }
+  }
+
+@media only screen
+  and (min-device-width: 814px)
+  and (max-device-width: 1024px) {
+    header img {
+      width: 600px;
+    }
+
+    .intro-text p {
+      font-size: 19px;
+    }
+
+    .container {
+      width: 95%;
+    }
+
+    .header-row {
+      margin-bottom: 0px;
+    }
+
+    .stat-font {
+      font-size: 20px;
+      margin-top: 14%;
+      color: gold;
+      letter-spacing: .5px;
+      font-family: "Bangers", cursive;
+    }
+
+    aside div {
+      width: 90%;
+      height: 66px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../images/game-stats.png);
+      background-size: 100% 100%;
+      margin: 2px 0px;
+    }
+
+    .card {
+      height: 30%;;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      margin: 0;
+      position: relative;
+    }
+
+    .card-front {
+      height: 22vh;
+      width: 100%;
+      background-size: 100% 100%;
+    }
+
+    .card-back {
+      height: 22vh;
+      width: 100%;
+    }
+
+    .troll-distance {
+      max-width: 95%;
+      margin: 40px auto 20px;
+      height: 100px;
+    }
+
+    .troll-walking, .king-idle {
+      height: 100px;
+    }
+
+    .troll-dead {
+      max-width: 40vw;
+    }
+
+    .king-win, .king-lose {
+      max-width: 15%;
+    }
+
+    .warrior-win {
+      max-width: 12%;
+    }
+
+    .archer-win {
+      max-width: 13%;
+    }
+
+    .win-modal h1, .lose-modal h1 {
+      font-size: 45px;
+    }
+
+    .win-modal button, .lose-modal button {
+      font-size: 30px;
+      width: 195px;
+      height: 130px;
+      border: 2px solid black;
+    }
+  }
+
+@media only screen
+and (min-device-width: 1025px)
+and (max-device-width: 1366px) {
+
+  #background {
+    height: 99vh;
+  }
+
+  .intro-text p {
+    font-size: 26px;
+  }
+
+  aside div {
+    width: 90%;
+    height: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/game-stats.png);
+    background-size: 100% 100%;
+    margin: 2px 0px;
+  }
+
+  header img {
+    width: 900px;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .header-row {
+    margin-bottom: 0px;
+  }
+
+  .stat-font {
+    font-size: 27px;
+    margin-top: 14%;
+    color: gold;
+    letter-spacing: .5px;
+    font-family: "Bangers", cursive;
+  }
+
+  .card {
+    height: 30%;;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    position: relative;
+  }
+
+  .card-front {
+    height: 21vh;
+    width: 100%;
+    background-size: 100% 100%;
+  }
+
+  .card-back {
+    height: 22vh;
+    width: 100%;
+  }
+
+  .troll-distance {
+    max-width: 95%;
+    margin: 40px auto 20px;
+    height: 155px;
+  }
+
+  .troll-walking, .king-idle {
+    height: 150px;
+  }
+
+  .troll-dead {
+    max-width: 40vw;
+  }
+
+  .king-win, .king-lose {
+    max-width: 15%;
+  }
+
+  .warrior-win {
+    max-width: 12%;
+  }
+
+  .archer-win {
+    max-width: 13%;
+  }
+
+  .win-modal h1, .lose-modal h1 {
+    font-size: 45px;
+  }
+
+  .win-modal button, .lose-modal button {
+    font-size: 12px;
+    width: 150px;
+    height: 50px;
+    border: 2px solid black;
+  }
+}
+
+@media only screen
+and (min-device-width: 1367px) {
+  #background {
+    height: 99vh;
+  }
+
+  .intro-text p {
+    font-size: 1.5rem;
+  }
+  aside div {
+    width: 90%;
+    height: 8.4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/game-stats.png);
+    background-size: 100% 100%;
+    margin: 2px 0px;
+  }
+
+  header img {
+    width: 100%;
+  }
+
+.stat-font {
+    font-size: 25px;
+    margin-top: 14%;
+    color: gold;
+    letter-spacing: .5px;
+    font-family: "Bangers", cursive;
+  }
+
+  .troll-distance {
+    max-width: 95%;
+    margin: 30px auto 20px;
+    height: 15vh;
+  }
+}
 
 .hidden {
   display: none;
