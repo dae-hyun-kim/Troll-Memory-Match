@@ -429,6 +429,14 @@ aside div {
       font-family: "Bangers", cursive;
     }
 
+    .stat-column {
+      display: none;
+    }
+
+    .game-row {
+      height: 79vh;
+    }
+
     aside div {
       width: 90%;
       height: 8vh;
@@ -441,7 +449,8 @@ aside div {
     }
 
     .card {
-      height: 30%;;
+      height: 10%;
+      width: 33%;
       background-size: 100% 100%;
       background-repeat: no-repeat;
       margin: 0;
@@ -449,13 +458,13 @@ aside div {
     }
 
     .card-front {
-      height: 22vh;
+      height: 14vh;
       width: 100%;
       background-size: 100% 100%;
     }
 
     .card-back {
-      height: 21vh;
+      height: 13vh;
       width: 98%;
     }
 
