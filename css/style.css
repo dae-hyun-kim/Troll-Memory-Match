@@ -401,7 +401,7 @@ aside div {
     }
   }
 
-
+/*----------------------------------------------------------------------------*/
 @media only screen
   and (max-device-width: 599px) {
     header img {
@@ -411,7 +411,9 @@ aside div {
       font-size: 12px;
     }
     .intro-start-button {
-      width: 25%;
+      width: 45%;
+      height: 8vh;
+      font-size: 3vh;
     }
     .container {
       width: 95%;
@@ -493,8 +495,42 @@ aside div {
       height: 50px;
       border: 2px solid black;
     }
+
+    .intro-image-troll1 {
+    position: absolute;
+    width: 28%;
+    top: 45%;
+  }
+    .intro-image-king {
+    position: absolute;
+    width: 20%;
+    top: 46%;
+    }
+
+    .intro-image-troll2 {
+    position: absolute;
+    width: 28%;
+    top: 60%;
   }
 
+  .intro-image-archer {
+    position: absolute;
+    width: 20%;
+    top: 62%;
+  }
+
+  .intro-image-troll3 {
+    position: absolute;
+    width: 28%;
+    top: 80%;
+  }
+
+  .intro-image-warrior {
+    position: absolute;
+    width: 20%;
+    top: 82%;
+  }
+  }
 @media only screen
   and (min-device-width:600px)
   and (max-device-width: 813px) {
@@ -591,9 +627,9 @@ aside div {
 @media only screen
   and (min-device-width: 814px)
   and (max-device-width: 1024px) {
-    /* header img {
+    header img {
       width: 600px;
-    } */
+    }
 
     .intro-text p {
       font-size: 19px;
@@ -683,144 +719,145 @@ aside div {
     }
   }
 
-  @media only screen
-  and (min-device-width: 1025px)
-  and (max-device-width: 1366px) {
+@media only screen
+and (min-device-width: 1025px)
+and (max-device-width: 1366px) {
 
-    #background {
-      height: 99vh;
-    }
-
-    .intro-text p {
-      font-size: 26px;
-    }
-
-    aside div {
-      width: 90%;
-      height: 95px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-image: url(../images/game-stats.png);
-      background-size: 100% 100%;
-      margin: 2px 0px;
-    }
-
-    header img {
-      width: 900px;
-    }
-
-    .container {
-      width: 95%;
-    }
-
-    .header-row {
-      margin-bottom: 0px;
-    }
-
-    .stat-font {
-      font-size: 27px;
-      margin-top: 14%;
-      color: gold;
-      letter-spacing: .5px;
-      font-family: "Bangers", cursive;
-    }
-
-    .card {
-      height: 30%;;
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-      margin: 0;
-      position: relative;
-    }
-
-    .card-front {
-      height: 21vh;
-      width: 100%;
-      background-size: 100% 100%;
-    }
-
-    .card-back {
-      height: 22vh;
-      width: 100%;
-    }
-
-    .troll-distance {
-      max-width: 95%;
-      margin: 40px auto 20px;
-      height: 155px;
-    }
-
-    .troll-walking, .king-idle {
-      height: 150px;
-    }
-
-    .troll-dead {
-      max-width: 40vw;
-    }
-
-    .king-win, .king-lose {
-      max-width: 15%;
-    }
-
-    .warrior-win {
-      max-width: 12%;
-    }
-
-    .archer-win {
-      max-width: 13%;
-    }
-
-    .win-modal h1, .lose-modal h1 {
-      font-size: 45px;
-    }
-
-    .win-modal button, .lose-modal button {
-      font-size: 12px;
-      width: 150px;
-      height: 50px;
-      border: 2px solid black;
-    }
+  #background {
+    height: 99vh;
   }
 
-  @media only screen
-  and (min-device-width: 1367px) {
-    #background {
-      height: 99vh;
-    }
+  .intro-text p {
+    font-size: 26px;
+  }
 
-    .intro-text p {
-      font-size: 1.5rem;
-    }
-    aside div {
-      width: 90%;
-      height: 8.4vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-image: url(../images/game-stats.png);
-      background-size: 100% 100%;
-      margin: 2px 0px;
-    }
+  aside div {
+    width: 90%;
+    height: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/game-stats.png);
+    background-size: 100% 100%;
+    margin: 2px 0px;
+  }
 
-    header img {
-      width: 100%;
-    }
+  header img {
+    width: 900px;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .header-row {
+    margin-bottom: 0px;
+  }
 
   .stat-font {
-      font-size: 25px;
-      margin-top: 14%;
-      color: gold;
-      letter-spacing: .5px;
-      font-family: "Bangers", cursive;
-    }
-
-    .troll-distance {
-      max-width: 95%;
-      margin: 30px auto 20px;
-      height: 15vh;
-    }
+    font-size: 27px;
+    margin-top: 14%;
+    color: gold;
+    letter-spacing: .5px;
+    font-family: "Bangers", cursive;
   }
+
+  .card {
+    height: 30%;;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    position: relative;
+  }
+
+  .card-front {
+    height: 21vh;
+    width: 100%;
+    background-size: 100% 100%;
+  }
+
+  .card-back {
+    height: 22vh;
+    width: 100%;
+  }
+
+  .troll-distance {
+    max-width: 95%;
+    margin: 40px auto 20px;
+    height: 155px;
+  }
+
+  .troll-walking, .king-idle {
+    height: 150px;
+  }
+
+  .troll-dead {
+    max-width: 40vw;
+  }
+
+  .king-win, .king-lose {
+    max-width: 15%;
+  }
+
+  .warrior-win {
+    max-width: 12%;
+  }
+
+  .archer-win {
+    max-width: 13%;
+  }
+
+  .win-modal h1, .lose-modal h1 {
+    font-size: 45px;
+  }
+
+  .win-modal button, .lose-modal button {
+    font-size: 12px;
+    width: 150px;
+    height: 50px;
+    border: 2px solid black;
+  }
+}
+
+@media only screen
+and (min-device-width: 1367px) {
+  #background {
+    height: 99vh;
+  }
+
+  .intro-text p {
+    font-size: 1.5rem;
+  }
+  aside div {
+    width: 90%;
+    height: 8.4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/game-stats.png);
+    background-size: 100% 100%;
+    margin: 2px 0px;
+  }
+
+  header img {
+    width: 100%;
+  }
+
+.stat-font {
+    font-size: 25px;
+    margin-top: 14%;
+    color: gold;
+    letter-spacing: .5px;
+    font-family: "Bangers", cursive;
+  }
+
+  .troll-distance {
+    max-width: 95%;
+    margin: 30px auto 20px;
+    height: 15vh;
+  }
+}
+
 .hidden {
   display: none;
 }
