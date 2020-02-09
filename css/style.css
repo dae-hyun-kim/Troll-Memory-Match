@@ -1,6 +1,8 @@
 body {
   background-size: cover;
   background-repeat: no-repeat;
+  height: 99vh;
+  overflow: hidden;
 }
 
 main {
@@ -266,9 +268,235 @@ aside div {
   66% { transform: translate(-10px, -16px); }
   100% { transform: translate(-8px, -16px); }
 }
-/*----------------------------------------------------------------------------*/
+/*-------------------------INTRO PAGE ANIMATIONS------------------------------*/
+.intro-start {
+    position: relative;
+    height: 80vh;
+    width: 98vw;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .intro-start-button {
+    width: 25%;
+    height: 15vh;
+    font-size: 5vh;
+    letter-spacing: 0.3vw;
+    color: gold;
+    font-family: "Bangers", cursive;
+    background-color: transparent;
+    border: none;
+    background-image: url(../images/game-stats.png);
+    background-size: 100% 100%;
+  }
+
+  .intro-start-button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .intro-image-troll1 {
+    position: absolute;
+    width: 15%;
+    top: 35%;
+    right: 10%;
+    animation-duration: 17s;
+    animation-name: slideIn1;
+    animation-iteration-count: infinite;
+  }
+
+  .intro-image-king {
+    position: absolute;
+    width: 11%;
+    top: 35%;
+    right: 0%;
+    animation-duration: 17s;
+    animation-name: slideIn2;
+    animation-iteration-count: infinite;
+  }
+
+  .intro-image-troll2 {
+    position: absolute;
+    width: 15%;
+    top: 50%;
+    left: 0%;
+    animation-duration: 15s;
+    animation-name: slideIn3;
+    animation-iteration-count: infinite;
+  }
+
+  .intro-image-archer {
+    position: absolute;
+    width: 11%;
+    top: 50%;
+    left: 0;
+    animation-duration: 15s;
+    animation-name: slideIn4;
+    animation-iteration-count: infinite;
+  }
+
+  .intro-image-troll3 {
+    position: absolute;
+    width: 15%;
+    top: 70%;
+    right: 5%;
+    animation-duration: 13s;
+    animation-name: slideIn1;
+    animation-iteration-count: infinite;
+  }
+
+  .intro-image-warrior {
+    position: absolute;
+    width: 11%;
+    top: 70%;
+    right: 0;
+    animation-duration: 13s;
+    animation-name: slideIn2;
+    animation-iteration-count: infinite;
+  }
+  @keyframes slideIn1 {
+    from {
+      position: absolute;
+      right: -10%;
+    }
+
+    to {
+      position: absolute;
+      right: 120%;
+    }
+  }
+
+  @keyframes slideIn2 {
+    from {
+      position: absolute;
+      right: -20%;
+    }
+
+    to {
+      position: absolute;
+      right: 110%;
+    }
+  }
+
+  @keyframes slideIn3 {
+    from {
+      position: absolute;
+      left: -10%;
+    }
+
+    to {
+      position: absolute;
+      left: 120%;
+    }
+  }
+
+  @keyframes slideIn4 {
+    from {
+      position: absolute;
+      left: -20%;
+    }
+
+    to {
+      position: absolute;
+      left: 110%;
+    }
+  }
+
 
 @media only screen
+  and (max-device-width: 599px) {
+    header img {
+      width: 100%;
+    }
+    .intro-text p {
+      font-size: 12px;
+    }
+    .intro-start-button {
+      width: 25%;
+    }
+    .container {
+      width: 95%;
+    }
+    .header-row {
+      margin-bottom: 0px;
+    }
+    .stat-font {
+      font-size: 11px;
+      margin-top: 14%;
+      color: gold;
+      letter-spacing: .5px;
+      font-family: "Bangers", cursive;
+    }
+
+    aside div {
+      width: 90%;
+      height: 8vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../images/game-stats.png);
+      background-size: 100% 100%;
+      margin: 1px 0px;
+    }
+
+    .card {
+      height: 30%;;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      margin: 0;
+      position: relative;
+    }
+
+    .card-front {
+      height: 22vh;
+      width: 100%;
+      background-size: 100% 100%;
+    }
+
+    .card-back {
+      height: 21vh;
+      width: 98%;
+    }
+
+    .troll-distance {
+      max-width: 95%;
+      margin: 20px auto 0;
+      height: 9vh;
+    }
+
+    .troll-walking, .king-idle {
+      height: 9vh;
+    }
+
+    .troll-dead {
+      max-width: 35vw;
+    }
+
+    .king-win, .king-lose {
+      max-width: 15%;
+    }
+
+    .warrior-win {
+      max-width: 12%;
+    }
+
+    .archer-win {
+      max-width: 13%;
+    }
+
+    .win-modal h1, .lose-modal h1 {
+      font-size: 25px;
+    }
+
+    .win-modal button, .lose-modal button {
+      font-size: 12px;
+      width: 150px;
+      height: 50px;
+      border: 2px solid black;
+    }
+  }
+
+@media only screen
+  and (min-device-width:600px)
   and (max-device-width: 813px) {
     header img {
       width: 300px;
@@ -363,15 +591,12 @@ aside div {
 @media only screen
   and (min-device-width: 814px)
   and (max-device-width: 1024px) {
-    header img {
+    /* header img {
       width: 600px;
-    }
+    } */
 
     .intro-text p {
       font-size: 19px;
-    }
-    #background {
-      height: 98vh;
     }
 
     .container {
@@ -392,7 +617,7 @@ aside div {
 
     aside div {
       width: 90%;
-      height: 70px;
+      height: 66px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -596,143 +821,6 @@ aside div {
       height: 15vh;
     }
   }
-
-  .intro-start {
-    position: relative;
-    height: 80vh;
-    width: 98vw;
-    text-align: center;
-    overflow: hidden;
-  }
-
-  body {
-    overflow: hidden;
-  }
-
-  .intro-start-button {
-    width: 25%;
-    height: 15vh;
-    font-size: 5vh;
-    letter-spacing: 0.3vw;
-    color: gold;
-    font-family: "Bangers", cursive;
-    background-color: transparent;
-    border: none;
-    background-image: url(../images/game-stats.png);
-    background-size: 100% 100%;
-  }
-
-  .intro-start-button:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-  }
-  .intro-image-troll1 {
-    position: absolute;
-    width: 15%;
-    top: 35%;
-    right: 10%;
-    animation-duration: 17s;
-    animation-name: slideIn1;
-    animation-iteration-count: infinite;
-  }
-
-  .intro-image-king {
-    position: absolute;
-    width: 11%;
-    top: 35%;
-    right: 0%;
-    animation-duration: 17s;
-    animation-name: slideIn2;
-    animation-iteration-count: infinite;
-  }
-
-  .intro-image-troll2 {
-    position: absolute;
-    width: 15%;
-    top: 50%;
-    left: 0%;
-    animation-duration: 15s;
-    animation-name: slideIn3;
-    animation-iteration-count: infinite;
-  }
-
-  .intro-image-archer {
-    position: absolute;
-    width: 11%;
-    top: 50%;
-    left: 0;
-    animation-duration: 15s;
-    animation-name: slideIn4;
-    animation-iteration-count: infinite;
-  }
-
-  .intro-image-troll3 {
-    position: absolute;
-    width: 15%;
-    top: 70%;
-    right: 5%;
-    animation-duration: 13s;
-    animation-name: slideIn1;
-    animation-iteration-count: infinite;
-  }
-
-  .intro-image-warrior {
-    position: absolute;
-    width: 11%;
-    top: 70%;
-    right: 0;
-    animation-duration: 13s;
-    animation-name: slideIn2;
-    animation-iteration-count: infinite;
-  }
-  @keyframes slideIn1 {
-    from {
-      position: absolute;
-      right: -10%;
-    }
-
-    to {
-      position: absolute;
-      right: 120%;
-    }
-  }
-
-  @keyframes slideIn2 {
-    from {
-      position: absolute;
-      right: -20%;
-    }
-
-    to {
-      position: absolute;
-      right: 110%;
-    }
-  }
-
-  @keyframes slideIn3 {
-    from {
-      position: absolute;
-      left: -10%;
-    }
-
-    to {
-      position: absolute;
-      left: 120%;
-    }
-  }
-
-  @keyframes slideIn4 {
-    from {
-      position: absolute;
-      left: -20%;
-    }
-
-    to {
-      position: absolute;
-      left: 110%;
-    }
-  }
-
 .hidden {
   display: none;
 }
