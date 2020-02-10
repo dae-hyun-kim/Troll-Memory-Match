@@ -9,6 +9,9 @@ var introModal = document.getElementsByClassName("intro-modal")[0];
 var startGameButton = document.getElementsByClassName("start-game-button")[0];
 var gameRow = document.getElementsByClassName("game-row")[0];
 
+var statsHideButton = document.getElementById("stats-button");
+var statColumnHide = document.getElementById("stat-column");
+
 var gameCards = document.getElementById("gameCards");
 var firstCardClicked;
 var secondCardClicked;
@@ -225,4 +228,7 @@ repeatLevel.addEventListener("click", function () {
     troll.style.right = "0%"
   }, 1500)
 })
-/******************************************************************************/
+/******************DISPLAY STATS ON SMALLER DEVICES BUTTON*********************/
+statsHideButton.addEventListener("click", function(){
+  statColumnHide.classList.toggle("hide-stat");
+})
