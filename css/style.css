@@ -1,3 +1,16 @@
+.display-stats {
+  background-color: white;
+  position: fixed;
+  height: 5vw;
+  left: -5%;
+  top: 81%;
+	transform:rotate(7deg);
+  -ms-transform:rotate(90deg); /* IE 9 */
+  -moz-transform:rotate(90deg); /* Firefox */
+  -webkit-transform:rotate(90deg); /* Safari and Chrome */
+  -o-transform:rotate(90deg)
+}
+
 body {
   background-size: cover;
   background-repeat: no-repeat;
@@ -429,7 +442,7 @@ aside div {
       font-family: "Bangers", cursive;
     }
 
-    .stat-column {
+    .hide-stat {
       display: none;
     }
 
@@ -437,9 +450,14 @@ aside div {
       height: 79vh;
     }
 
+    aside {
+      display: block;
+      width: 30%;
+    }
+
     aside div {
       width: 90%;
-      height: 8vh;
+      height: 7vh;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -471,11 +489,11 @@ aside div {
     .troll-distance {
       max-width: 95%;
       margin: 20px auto 0;
-      height: 9vh;
+      height: 8vh;
     }
 
     .troll-walking, .king-idle {
-      height: 9vh;
+      height: 8vh;
     }
 
     .troll-dead {
@@ -559,7 +577,7 @@ aside div {
     }
     .stat-font {
       font-size: 11px;
-      margin-top: 14%;
+      margin-top: 10%;
       color: gold;
       letter-spacing: .5px;
       font-family: "Bangers", cursive;
@@ -631,6 +649,10 @@ aside div {
       height: 50px;
       border: 2px solid black;
     }
+
+    .size-hide {
+      display: none;
+    }
   }
 
 @media only screen
@@ -654,7 +676,7 @@ aside div {
 
     .stat-font {
       font-size: 20px;
-      margin-top: 14%;
+      margin-top: 7%;
       color: gold;
       letter-spacing: .5px;
       font-family: "Bangers", cursive;
@@ -725,6 +747,10 @@ aside div {
       width: 195px;
       height: 130px;
       border: 2px solid black;
+    }
+
+    .size-hide {
+      display: none;
     }
   }
 
@@ -826,6 +852,10 @@ and (max-device-width: 1366px) {
     height: 50px;
     border: 2px solid black;
   }
+
+  .size-hide {
+      display: none;
+    }
 }
 
 @media only screen
@@ -865,6 +895,10 @@ and (min-device-width: 1367px) {
     margin: 30px auto 20px;
     height: 15vh;
   }
+
+  .size-hide {
+      display: none;
+    }
 }
 
 .hidden {
