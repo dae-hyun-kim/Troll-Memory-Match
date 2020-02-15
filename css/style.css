@@ -450,9 +450,14 @@ aside div {
       height: 79vh;
     }
 
+    aside {
+      display: block;
+      width: 30%;
+    }
+
     aside div {
       width: 90%;
-      height: 8vh;
+      height: 7vh;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -572,7 +577,7 @@ aside div {
     }
     .stat-font {
       font-size: 11px;
-      margin-top: 14%;
+      margin-top: 10%;
       color: gold;
       letter-spacing: .5px;
       font-family: "Bangers", cursive;
@@ -644,6 +649,10 @@ aside div {
       height: 50px;
       border: 2px solid black;
     }
+
+    .size-hide {
+      display: none;
+    }
   }
 
 @media only screen
@@ -667,7 +676,7 @@ aside div {
 
     .stat-font {
       font-size: 20px;
-      margin-top: 14%;
+      margin-top: 7%;
       color: gold;
       letter-spacing: .5px;
       font-family: "Bangers", cursive;
@@ -738,6 +747,10 @@ aside div {
       width: 195px;
       height: 130px;
       border: 2px solid black;
+    }
+
+    .size-hide {
+      display: none;
     }
   }
 
@@ -839,6 +852,10 @@ and (max-device-width: 1366px) {
     height: 50px;
     border: 2px solid black;
   }
+
+  .size-hide {
+      display: none;
+    }
 }
 
 @media only screen
@@ -878,6 +895,10 @@ and (min-device-width: 1367px) {
     margin: 30px auto 20px;
     height: 15vh;
   }
+
+  .size-hide {
+      display: none;
+    }
 }
 
 .hidden {

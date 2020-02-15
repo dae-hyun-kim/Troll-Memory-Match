@@ -78,6 +78,8 @@ introStartButton.addEventListener("click", function(){
 startGameButton.addEventListener("click", function() {
   introModal.classList.add("hidden");
   gameRow.classList.remove("hidden");
+  statsHideButton.classList.remove("hidden");
+  statsHideButton.classList.add("size-hide")
   trollDistanceBackground.classList.remove("hidden");
 })
 
@@ -231,4 +233,5 @@ repeatLevel.addEventListener("click", function () {
 /******************DISPLAY STATS ON SMALLER DEVICES BUTTON*********************/
 statsHideButton.addEventListener("click", function(){
   statColumnHide.classList.toggle("hide-stat");
+  statColumnHide.classList.remove("col-2");
 })
