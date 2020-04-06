@@ -157,7 +157,6 @@ main {
     font-family: "Uncial Antiqua", cursive;
   }
 
-/*-----------------------TROLL DISTANCE METER---------------------------------*/
 .forest-walk {
   background-image: url(../images/distance-bg.png);
 }
@@ -190,7 +189,6 @@ main {
   height: 15vh;
   transition-duration: 4000ms;
 }
-/*-------------------------------GAME STATS-----------------------------------*/
 
 aside {
   display: flex;
@@ -216,8 +214,6 @@ aside div {
   font-family: "Bangers", cursive;
 }
 
-/*-------------------------BODY BACKGROUNDS-----------------------------------*/
-
 .cave {
   background-image: url(../images/cave-background.png);
 }
@@ -230,7 +226,7 @@ aside div {
   background-image: url(../images/desert-background.png);
 }
 
-/*------------------------CARD FRONTS------------------------------------------*/
+
 .archer-shooting {
   background-image: url(../images/archer-shooting.gif), radial-gradient(white, rgb(255, 240, 125), transparent 70%);
 
@@ -268,7 +264,6 @@ aside div {
   background-image: url(../images/warrior-slashing.gif), radial-gradient(white, rgb(255, 240, 125), transparent 70%);
 }
 
-/*---------------------CARD BACK ANIMATIONS-----------------------------------*/
 .card-back:hover {
    animation: shake-cards .1s infinite alternate;
    background-image: url(../images/card-back.png), radial-gradient(white, rgb(255, 240, 125), transparent 70%);
@@ -281,7 +276,7 @@ aside div {
   66% { transform: translate(-10px, -16px); }
   100% { transform: translate(-8px, -16px); }
 }
-/*-------------------------INTRO PAGE ANIMATIONS------------------------------*/
+
 .intro-start {
     position: relative;
     height: 80vh;
@@ -414,7 +409,6 @@ aside div {
     }
   }
 
-/*----------------------------------------------------------------------------*/
 @media only screen
   and (max-device-width: 599px) {
     header img {
