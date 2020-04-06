@@ -1,4 +1,3 @@
-//Global Variables
 var background = document.getElementById("background");
 var trollWalkingImage = document.getElementsByClassName("troll-walking")[0];
 var trollDistanceBackground = document.getElementById("troll-distance-background");
@@ -141,7 +140,6 @@ function handleClick(event) {
   }
 }
 
-/**************************WIN MODAL/NEXT TROLL********************************/
 playAgain.addEventListener("click", function () {
   theModal1.classList.add("hidden");
   gameRow.classList.remove("hidden");
@@ -192,7 +190,6 @@ playAgain.addEventListener("click", function () {
   }
 })
 
-/***********************LOSE MODAL*********************************************/
 repeatLevel.addEventListener("click", function () {
   setTimeout(function () {
     theModal2.classList.add("hidden");
@@ -230,7 +227,7 @@ repeatLevel.addEventListener("click", function () {
     troll.style.right = "0%"
   }, 1500)
 })
-/******************DISPLAY STATS ON SMALLER DEVICES BUTTON*********************/
+
 statsHideButton.addEventListener("click", function(){
   statColumnHide.classList.toggle("hide-stat");
   statColumnHide.classList.remove("col-2");
