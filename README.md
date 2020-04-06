@@ -23,4 +23,4 @@ Try the application at <a href="https://recruit-conquer.danny-dae-kim.com/" targ
 </ul>
 
 # Preview
-<img src="./images/recruit-conquer.gif" alt="recruit-and-conquer game preview>
+<img src="./images/recruit-conquer.gif" alt="recruit-and-conquer game preview">
