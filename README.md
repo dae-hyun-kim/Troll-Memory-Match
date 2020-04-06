@@ -10,7 +10,7 @@ A JavaScript memory matching application with a medieval theme and dangerous tro
 </ul>
 
 # Live Demo
-Try the application at <a href="https://recruit-conquer.danny-dae-kim.com/" target="_blank">https://recruit-conquer.danny-dae-kim.com/ </a>
+Try the application at <a href="https://recruit-conquer.danny-dae-kim.com/" target="blank">https://recruit-conquer.danny-dae-kim.com/ </a>
 
 # Features
 <ul>
@@ -18,7 +18,7 @@ Try the application at <a href="https://recruit-conquer.danny-dae-kim.com/" targ
   <li>Users can trigger win condition by matching all characters</li>
   <li>Users can move to next round after win</li>
   <li>Users can triger lose condition by not matching all characters in 20 attempts</li>
-  <li>Users can view number of games played<li>
+  <li>Users can view number of games played</li>
   <li>Users can view number of attempts and accuracy</li>
 </ul>
 
