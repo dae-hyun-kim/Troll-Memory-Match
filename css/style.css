@@ -267,7 +267,7 @@ aside div {
 .card-back:hover {
    animation: shake-cards .1s infinite alternate;
    background-image: url(../images/card-back.png), radial-gradient(white, rgb(255, 240, 125), transparent 70%);
-
+  cursor: pointer;
 }
 
 @keyframes shake-cards {
@@ -409,6 +409,18 @@ aside div {
     }
   }
 
+  .start-game-button {
+    cursor: pointer;
+  }
+
+#play-again {
+  cursor: pointer;
+}
+
+#repeat-level {
+  cursor: pointer;
+}
+
 @media only screen
   and (max-device-width: 599px) {
     header img {
@@ -417,6 +429,22 @@ aside div {
     .intro-text p {
       font-size: 12px;
     }
+
+    .intro-text {
+      left: 55%;
+    }
+
+    .start-game-button {
+      width: 125px;
+      height: 75px;
+      font-size: 1em;
+      margin-top: 10px;
+    }
+
+    .intro-modal img {
+      width: 22%;
+    }
+
     .intro-start-button {
       width: 45%;
       height: 8vh;
@@ -494,10 +522,13 @@ aside div {
       max-width: 35vw;
     }
 
-    .king-win, .king-lose {
+    .king-win {
       max-width: 15%;
     }
 
+    .king-lose {
+      max-width: 35%;
+    }
     .warrior-win {
       max-width: 12%;
     }
@@ -554,15 +585,32 @@ aside div {
   }
 @media only screen
   and (min-device-width:600px)
-  and (max-device-width: 813px) {
+  and (max-device-width: 750px) {
     header img {
-      width: 300px;
+      width: 550px;
+    }
+
+    .intro-start-button {
+      width: 220px;
+      font-size: 2em;
+      height: 100px;
+    }
+
+    .start-game-button {
+      width: 125px;
+      height: 75px;
+      font-size: 1em;
+      margin-top: 10px;
     }
 
     .intro-text p {
       font-size: 12px;
     }
 
+    .intro-text {
+      top: 50%;
+      left: 50%;
+    }
     .container {
       width: 95%;
     }
@@ -610,11 +658,11 @@ aside div {
     .troll-distance {
       max-width: 95%;
       margin: 20px auto 0;
-      height: 19vh;
+      height: 10vh;
     }
 
     .troll-walking, .king-idle {
-      height: 19vh;
+      height: 10vh;
     }
 
     .troll-dead {
@@ -635,6 +683,154 @@ aside div {
 
     .win-modal h1, .lose-modal h1 {
       font-size: 25px;
+    }
+
+    .win-modal button, .lose-modal button {
+      font-size: 12px;
+      width: 150px;
+      height: 50px;
+      border: 2px solid black;
+    }
+
+    .size-hide {
+      display: none;
+    }
+  }
+
+  @media only screen
+  and (min-device-width:751px)
+  and (max-device-width: 813px) {
+    header img {
+      width: 550px;
+    }
+
+    .intro-image-troll1 {
+      width: 25%;
+    }
+
+    .intro-image-troll2 {
+      width: 25%;
+    }
+
+    .intro-image-troll3 {
+      width: 25%;
+    }
+
+    .intro-image-king {
+      width: 20%;
+    }
+
+    .intro-image-archer {
+      width: 18%;
+    }
+
+    .intro-image-warrior {
+      width: 20%;
+    }
+    .game-row {
+      height: 800px;
+    }
+
+    .intro-start-button {
+      width: 220px;
+      font-size: 2em;
+      height: 100px;
+    }
+
+    .intro-modal img {
+      width: 18%;
+    }
+
+    .start-game-button {
+      width: 125px;
+      height: 75px;
+      font-size: 1em;
+      margin-top: 10px;
+    }
+
+    .intro-text p {
+      font-size: 18px;
+    }
+
+    .intro-text {
+      top: 50%;
+      left: 54%;
+    }
+    .container {
+      width: 95%;
+    }
+    .header-row {
+      margin-bottom: 0px;
+    }
+    .stat-font {
+      font-size: 15px;
+      margin-top: 10%;
+      color: gold;
+      letter-spacing: .5px;
+      font-family: "Bangers", cursive;
+    }
+
+    aside div {
+      width: 90%;
+      height: 8vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../images/game-stats.png);
+      background-size: 100% 100%;
+      margin: 1px 0px;
+    }
+
+    .card {
+      height: 30%;;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      margin: 0;
+      position: relative;
+    }
+
+    .card-front {
+      height: 17vh;
+      width: 100%;
+      background-size: 100% 100%;
+    }
+
+    .card-back {
+      height: 17vh;
+      width: 98%;
+    }
+
+    .troll-distance {
+      max-width: 95%;
+      margin: 20px auto 0;
+      height: 10vh;
+    }
+
+    .troll-walking, .king-idle {
+      height: 10vh;
+    }
+
+    .troll-dead {
+      max-width: 35vw;
+    }
+
+    .king-win {
+      max-width: 15%;
+    }
+
+    .king-lose {
+      max-width: 30%;
+    }
+    .warrior-win {
+      max-width: 12%;
+    }
+
+    .archer-win {
+      max-width: 13%;
+    }
+
+    .win-modal h1, .lose-modal h1 {
+      font-size: 38px;
     }
 
     .win-modal button, .lose-modal button {

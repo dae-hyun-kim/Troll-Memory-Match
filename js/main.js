@@ -110,9 +110,11 @@ function handleClick(event) {
 
       matches++
       if (matches === maxMatches) {
-        theModal1.classList.remove("hidden");
-        gameRow.classList.add("hidden");
-        trollDistanceBackground.classList.add("hidden");
+        setTimeout(() => {
+          theModal1.classList.remove("hidden");
+          gameRow.classList.add("hidden");
+          trollDistanceBackground.classList.add("hidden");
+        }, 1000)
       }
 
     } else {
@@ -130,9 +132,11 @@ function handleClick(event) {
     accuracy.textContent = (Math.floor((matches / turns) * 100) + "%");
 
     if (turns === 20) {
-      loseModal.classList.remove("hidden");
-      gameRow.classList.add("hidden");
-      trollDistanceBackground.classList.add("hidden");
+      setTimeout(() => {
+        loseModal.classList.remove("hidden");
+        gameRow.classList.add("hidden");
+        trollDistanceBackground.classList.add("hidden");
+      }, 1000)
     }
 
     trollDistance = (turns * 4.5);
