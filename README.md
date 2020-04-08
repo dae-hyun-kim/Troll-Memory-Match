@@ -24,3 +24,16 @@ Try the application at <a href="https://recruit-conquer.danny-dae-kim.com/" targ
 
 # Preview
 <img src="./images/recruit-conquer.gif" alt="recruit-and-conquer game preview">
+
+# Development
+
+#### System Requirements
+- None
+
+#### Getting Started
+1. Clone the repository.
+  ```shell
+  git clone https://github.com/dae-hyun-kim/recruit-and-conquer
+  cd recruit-and-conquer
+  ```
+2. View the project by opening ```index.html``` in your browser.
