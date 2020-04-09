@@ -428,10 +428,12 @@ aside div {
     }
     .intro-text p {
       font-size: 12px;
+      padding: 5px;
     }
 
     .intro-text {
       left: 55%;
+      height: 40%;
     }
 
     .start-game-button {
@@ -605,11 +607,13 @@ aside div {
 
     .intro-text p {
       font-size: 12px;
+      padding: 5px;
     }
 
     .intro-text {
       top: 50%;
       left: 50%;
+      height: 40%;
     }
     .container {
       width: 95%;
@@ -750,6 +754,7 @@ aside div {
 
     .intro-text p {
       font-size: 18px;
+      padding: 10px;
     }
 
     .intro-text {

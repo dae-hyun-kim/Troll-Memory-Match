@@ -131,7 +131,7 @@ function handleClick(event) {
     attempts.textContent = turns;
     accuracy.textContent = (Math.floor((matches / turns) * 100) + "%");
 
-    if (turns === 20) {
+    if (turns === 20 && matches !== 9) {
       setTimeout(() => {
         loseModal.classList.remove("hidden");
         gameRow.classList.add("hidden");
