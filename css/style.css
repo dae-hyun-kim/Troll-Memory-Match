@@ -271,10 +271,10 @@ aside div {
 }
 
 @keyframes shake-cards {
-  0% { transform: translate(-8px, -14px); }
-  33% { transform: translate(-10px, -14px); }
-  66% { transform: translate(-10px, -16px); }
-  100% { transform: translate(-8px, -16px); }
+  0% { transform: translate(-2px, -2px); }
+  33% { transform: translate(-4px, -2px); }
+  66% { transform: translate(-4px, -4px); }
+  100% { transform: translate(-2px, -4px); }
 }
 
 .intro-start {
